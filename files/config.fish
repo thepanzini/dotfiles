@@ -18,7 +18,6 @@ abbr -a -U -- gdt 'git tag -d'
 abbr -a -U -- gdtr 'git push -d origin'
 abbr -a -U -- gf 'git fetch'
 abbr -a -U -- gfs 'git fetch && git status'
-abbr -a -U -- gm 'git merge'
 abbr -a -U -- gmd 'git merge dev'
 abbr -a -U -- gmm 'git merge master'
 abbr -a -U -- gmt 'git mergetool && rm *.orig'
@@ -33,11 +32,13 @@ abbr -a -U -- gs 'git status'
 abbr -a -U -- gt 'git tag'
 abbr -a -U -- jb 'jekyll b'
 abbr -a -U -- js 'jekyll s'
-abbr -a -U -- ll 'ls -la'
-abbr -a -U -- mergetool 'git mergetool && find . -type f -name "*.orig" -delete'
+abbr -a -U -- ll 'ls -lah --group-directories-first'
 abbr -a -U -- projects 'cd /mnt/c/Projects/'
 abbr -a -U -- rmf 'rm -rf'
 abbr -a -U -- x exit
+abbr -a -U -- gst 'git stash'
+abbr -a -U -- gsa 'git stash apply'
+abbr -a -U -- gsd 'git stash drop'
 
 # Prompt Settings
 set -g theme_title_display_user yes
@@ -48,3 +49,7 @@ set -g default_user jpanzini
 set -g theme_date_format '+%a, %b %d - %I:%M:%S %p'
 set -g theme_newline_cursor yes
 set -g theme_newline_prompt '><$> '
+
+function unixify 
+	sed -i -e 's/\r$//' $argv
+end
