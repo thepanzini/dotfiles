@@ -29,6 +29,9 @@ abbr -a -U -- gpuo 'git push -u origin'
 abbr -a -U -- gr-c 'git rm --cached'
 abbr -a -U -- gr-h 'git reset --hard HEAD'
 abbr -a -U -- gs 'git status'
+abbr -a -U -- gst 'git stash'
+abbr -a -U -- gsa 'git stash apply'
+abbr -a -U -- gsd 'git stash drop'
 abbr -a -U -- gt 'git tag'
 abbr -a -U -- jb 'jekyll b'
 abbr -a -U -- js 'jekyll s'
@@ -36,9 +39,6 @@ abbr -a -U -- ll 'ls -lah --group-directories-first'
 abbr -a -U -- projects 'cd /mnt/c/Projects/'
 abbr -a -U -- rmf 'rm -rf'
 abbr -a -U -- x exit
-abbr -a -U -- gst 'git stash'
-abbr -a -U -- gsa 'git stash apply'
-abbr -a -U -- gsd 'git stash drop'
 
 # Prompt Settings
 set -g theme_title_display_user yes
