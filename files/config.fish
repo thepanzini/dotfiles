@@ -39,7 +39,7 @@ abbr -a -U -- js 'jekyll s'
 abbr -a -U -- ll 'ls -lah --group-directories-first'
 abbr -a -U -- projects 'cd /mnt/c/Projects/'
 abbr -a -U -- rmf 'rm -rf'
-abbr -a -U -- x exiti
+abbr -a -U -- x exit
 
 # Prompt Settings
 set -g theme_title_display_user yes
