@@ -2,7 +2,8 @@ abbr -a -U -- .. 'cd ../'
 abbr -a -U -- ... 'cd ../../'
 abbr -a -U -- .... 'cd ../../../'
 abbr -a -U -- ..... 'cd ../../../../'
-abbr -a -U -- add 'git add -A'
+abbr -a -U -- add 'git add'
+abbr -a -U -- addall 'git add -A'
 abbr -a -U -- c clear
 abbr -a -U -- cdd 'cd -'
 abbr -a -U -- clog 'npx standard-version'
@@ -14,6 +15,7 @@ abbr -a -U -- gc-b 'git checkout -b'
 abbr -a -U -- gcd 'git checkout dev'
 abbr -a -U -- gcm 'git checkout master'
 abbr -a -U -- gcom 'git commit'
+abbr -a -U -- gcvn 'git commit -m \'chore: INCREMENT VERSION NUMBER\''
 abbr -a -U -- gdt 'git tag -d'
 abbr -a -U -- gdtr 'git push -d origin'
 abbr -a -U -- gf 'git fetch'
@@ -51,11 +53,14 @@ set -g theme_date_format '+%a, %b %d - %I:%M:%S %p'
 set -g theme_newline_cursor yes
 set -g theme_newline_prompt '><$> '
 
+# Function to 'unixify' text from MS line endings
 function unixify 
 	sed -i -e 's/\r$//' $argv
 end
 
-#Set Colours
+# VARS for notifications
+set -U __done_min_cmd_duration 5000
+set -U __done_notify_sound 1
 
 # Smashing Together 2 themes
 
