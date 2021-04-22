@@ -36,8 +36,8 @@ abbr -a -U -- gsa 'git stash apply'
 abbr -a -U -- gsd 'git stash drop'
 abbr -a -U -- gst 'git stash'
 abbr -a -U -- gt 'git tag'
-abbr -a -U -- jb 'jekyll b'
-abbr -a -U -- js 'jekyll s'
+abbr -a -U -- jb 'bundle exec jekyll b'
+abbr -a -U -- js 'bundle exec jekyll s'
 abbr -a -U -- ll 'ls -lah --group-directories-first'
 abbr -a -U -- projects 'cd /mnt/c/Projects/'
 abbr -a -U -- rmf 'rm -rf'
@@ -62,66 +62,51 @@ end
 set -U __done_min_cmd_duration 5000
 set -U __done_notify_sound 1
 
-# Smashing Together 2 themes
+# THEME
 
-# Fist Theme
-
+# Dracula Color Palette
 set -l foreground f8f8f2
-set -l selection  44475a
-set -l comment    6272a4
-
-set -l red    ff5555
+set -l selection 44475a
+set -l comment 6272a4
+set -l red ff5555
 set -l orange ffb86c
-set -l yellow f4f99d
-set -l green  50fa7b
-set -l cyan   8be9fd
-set -l pink   ff79c6
+set -l yellow f1fa8c
+set -l green 50fa7b
 set -l purple bd93f9
+set -l cyan 8be9fd
+set -l pink ff79c6
 
-set -g fish_color_autosuggestion $selection
-set -g fish_color_command        $cyan
-set -g fish_color_comment        $comment
-set -g fish_color_end            $orange
-set -g fish_color_error          $red
-set -g fish_color_escape         $pink
-set -g fish_color_normal         $foreground
-set -g fish_color_operator       $green
-set -g fish_color_param          $purple
-set -g fish_color_quote          $yellow
-set -g fish_color_redirection    $foreground
-set -g fish_color_search_match   --background=$selection
-set -g fish_color_selection      --background=$selection
+set -g fish_color_cwd 			  $c
+set -g fish_color_end 			  $green
+set -g fish_color_host 			  $cyan
+set -g fish_color_user 			  $purple
+set -g fish_color_match 		  $green
+set -g fish_color_error 		  $red
+set -g fish_color_param 		  $orange 
+set -g fish_color_quote 		  $yellow
+set -g fish_color_normal          $foreground
+set -g fish_color_escape 		  $cyan
+set -g fish_color_command 		  $pink
+set -g fish_color_comment 		  $comment
+set -g fish_color_operator 		  $cyan
+set -g fish_color_cwd_root 		  $red
+set -g fish_color_selection 	  --background=$purple
+set -g fish_color_valid_path 	  --underline
+set -g fish_color_redirection 	  $purple
+set -g fish_color_search_match 	  --background=$selection
+set -g fish_color_autosuggestion  $comment
+set -g fish_color_history_current $cyan
 
-# Second Theme
+# IT'S A MYTHTERY
+set -g fish_color_keyword 		  $pink
 
-set -l COMMENT 6272a4
-set -l CYAN 8be9fd
-set -l GREEN 50fa7b
-set -l ORANGE ffb86c
-set -l PINK ff79c6
-set -l PURPLE bd93f9
-set -l RED ff5555
-set -l YELLOW f1fa8c
 
-set -g fish_color_autosuggestion $COMMENT
-set -g fish_color_command $PINK
-set -g fish_color_comment $COMMENT
-set -g fish_color_cwd $CYAN
-set -g fish_color_cwd_root $RED
-set -g fish_color_end $GREEN
-set -g fish_color_error $RED
-set -g fish_color_escape $CYAN
-set -g fish_color_history_current $CYAN
-set -g fish_color_host $CYAN
-set -g fish_color_match $GREEN
-set -g fish_color_operator $CYAN
-set -g fish_color_param $ORANGE 
-set -g fish_color_quote $YELLOW
-set -g fish_color_redirection $PURPLE
-set -g fish_color_search_match --background=$PURPLE
-set -g fish_color_selection --background=$PURPLE
-set -g fish_color_user $PURPLE
-set -g fish_color_valid_path --underline
+# Syntax Highlighting Colors
 
-set -g LS_COLORS "di=1;30;46:ln=1;35:so=32:pi=33:ex=1;30;42:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=1;30;47:ow=1;35;46:fi=1;95:ex=1;94"
+# Completion Pager Colors
+set -g fish_pager_color_progress $comment
+set -g fish_pager_color_prefix $pink
+set -g fish_pager_color_completion $foreground
+set -g fish_pager_color_description $comment
 
+eval (dircolors -c ~/.dircolors)

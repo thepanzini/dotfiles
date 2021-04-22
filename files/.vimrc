@@ -345,6 +345,10 @@ call plug#end()
 
 let g:lightline = { 'colorscheme': 'challenger_deep'}
 
+packadd! dracula
+syntax enable
+colorscheme dracula
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
