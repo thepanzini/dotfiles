@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/thepanzini/dotfiles/compare/v1.0.0...v1.0.1) (2021-05-13)
+
+
+### Features
+
+* Add fonts I like to keep ([ac82311](https://github.com/thepanzini/dotfiles/commit/ac82311213864a5b87036f789884b115cd2da20e))
+* Added WindowsTerminal Configuration ([3fcc817](https://github.com/thepanzini/dotfiles/commit/3fcc817260da774410d56c5aba8a437bea4e4299))
+* Adding in JetBrainsMono nerd font ([18e8204](https://github.com/thepanzini/dotfiles/commit/18e82042518377988b12de3bcb3d0dc7fd04ce33))
+* Adding in misc things I like ([8ddf61a](https://github.com/thepanzini/dotfiles/commit/8ddf61a2ec95d451148c6c0f55020a7be182f4a9))
+* Including terminal-bg to save in the cloud ([c0878f9](https://github.com/thepanzini/dotfiles/commit/c0878f9bf30066ac232b21c890d0a8502b387700))
+
 ## 1.0.0 (2021-05-13)
 
 
