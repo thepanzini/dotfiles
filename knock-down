@@ -3,11 +3,11 @@ set -e
 
 echo -e "\n\n${BLUE}OMF$NC ${GREEN}INSTALLED$NC\n\n"
 
-shell=$(which fish)
+shell_path=$(which fish)
 user=$(whoami)
 
 echo -e "SETTING DEFAULT ${BLUE}SHELL$NC TO ${YELLOW}FISH$NC\n\n"
-chsh -s $shell $user
+chsh -s $shell_path $user
 echo -e "\n\nDEFAULT ${BLUE}SHELL$NC ${GREEN}SET$NC\n\n"
 
 echo -e "INSTALLING ${BLUE}BOBTHEFISH$NC ${YELLOW}THEME$NC\n\n"
