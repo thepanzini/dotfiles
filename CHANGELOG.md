@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/thepanzini/dotfiles/compare/v1.0.1...v1.0.2) (2021-05-19)
+
+
+### Features
+
+* New install script ([6459ff5](https://github.com/thepanzini/dotfiles/commit/6459ff52180228d576bf0244a4194ebc0674b371))
+
 ### [1.0.1](https://github.com/thepanzini/dotfiles/compare/v1.0.0...v1.0.1) (2021-05-13)
 
 
