@@ -23,4 +23,4 @@ apt-get install fish -y
 echo -e "\n\n${YELLOW}FISH$NC READY TO ${BLUE}SWIM$NC\n\n"
 
 echo -e "INSTALLING ${BLUE}OMF$NC\n\n"
-curl -L https://get.oh-my.fish | fish ./knock-down
+curl -L https://get.oh-my.fish | fish -c './knock-down'
