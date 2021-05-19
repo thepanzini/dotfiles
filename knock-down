@@ -1,0 +1,60 @@
+#!/bin/bash
+set -e
+
+echo -e "\n\n${BLUE}OMF$NC ${GREEN}INSTALLED$NC\n\n"
+
+shell=$(which fish)
+user=$(whoami)
+
+echo -e "SETTING DEFAULT ${BLUE}SHELL$NC TO ${YELLOW}FISH$NC\n\n"
+chsh -s $shell $user
+echo -e "\n\nDEFAULT ${BLUE}SHELL$NC ${GREEN}SET$NC\n\n"
+
+echo -e "INSTALLING ${BLUE}BOBTHEFISH$NC ${YELLOW}THEME$NC\n\n"
+omf install bobthefish
+echo -e "\n\n${BLUE}BOBTHEFISH$NC ${GREEN}SUCCESSFULLY$NC INSTALLED AND ${YELLOW}SET$NC\n\n"
+
+echo -e "COPYING ${BiLUE}DOT FILES$NC\n\n"
+cp -rf config_files/.vimrc config_files/.viminfo config_files/.tmux.conf.local config_files/.tmux.conf config_files/.screenrc config_files/.gitconfig config_files/.dircolors config_files/.vim ~/
+echo -e "\n\n${BLUE}DOT FILES$NC ${GREEN}COPIED$NC\n\n"
+
+echo -e "COPYING ${BiLUE}FISH CONFIG$NC\n\n"
+cp -rf config_files/config.fish ~/.config/fish/
+echo -e "\n\n${BLUE}FISH CONFIG$NC ${GREEN}COPIED$NC\n\n"
+
+echo -e "PREFORMING FINAL CHECK\n\n"
+
+dot_str=""
+
+dots()
+{
+	count=$1
+	for ((i=1;i<=$count;i++));
+	do
+        dot_str+="."
+    done
+	echo "$dot_str"
+}
+
+dots_count=1
+
+for x in FISH OMF DOTFILES ; do
+	while true;
+	do
+		if [ "$dots_count" -eq 31 ]
+			then
+			printf "\r%0.30s%s\n" "$x$(dots $dots_count)" "${GREEN}[OK]$NC"
+			dots_count=1
+			dot_str=""
+			break
+		fi
+		printf "\r%0.30s%s" "$x$(dots $dots_count)" " "
+		dots_count=$((dots_count + 1))
+		sleep .1
+	done
+done
+
+echo -e "\n\nALL FINAL CHECKS ${GREEN}PASSED$NC\n\n"
+
+echo -e "READY TO BLAST OFF"
+
