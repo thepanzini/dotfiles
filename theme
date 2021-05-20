@@ -10,7 +10,7 @@ set YELLOW '\033[1;33m'
 set NC '\033[0m'
 
 echo -e "INSTALLING$BLUE BOBTHEFISH$NC$YELLOWT HEME$NC\n\n"
-#omf install bobthefish
+omf install bobthefish
 echo -e "\n\n$BLUE BOBTHEFISH$NC$GREEN SUCCESSFULLY$NC INSTALLED AND$YELLOW SET$NC\n\n"
 
 ./knock-down
