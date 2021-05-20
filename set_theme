@@ -1,0 +1,16 @@
+#!/usr/bin/fish
+
+# COLORS
+set BLUE '\033[1;36m'
+set GREEN '\033[0;32m'
+set RED '\033[1;31m'
+set YELLOW '\033[1;33m'
+
+# NO COLOR / ORIGINAL COLOR
+set NC '\033[0m'
+
+echo -e "INSTALLING$BLUE BOBTHEFISH$NC$YELLOWT HEME$NC\n\n"
+#omf install bobthefish
+echo -e "\n\n$BLUE BOBTHEFISH$NC$GREEN SUCCESSFULLY$NC INSTALLED AND$YELLOW SET$NC\n\n"
+
+./knock-down
