@@ -2,6 +2,33 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.3](https://github.com/thepanzini/dotfiles/compare/v1.0.2...v1.0.3) (2021-05-20)
+
+
+### Features
+
+* multiscript install ([89f1bbf](https://github.com/thepanzini/dotfiles/commit/89f1bbf8d66293671f92f59a89be47ecf585103b))
+* Split out the OMF part into it's own file ([3435fee](https://github.com/thepanzini/dotfiles/commit/3435feee3d507fd9dbb153304f829412bf52978b))
+* Update README ([1af939f](https://github.com/thepanzini/dotfiles/commit/1af939fc67ced2dc47d87df762864ff44b53a271))
+
+
+### Bug Fixes
+
+* Auto create the '.config' dir ([a1e29ea](https://github.com/thepanzini/dotfiles/commit/a1e29ea4862daf5b6bcc43ab28ae6c026eeb26e5))
+* Change name of theme file + start script as normal ask for sudo ([1076ab2](https://github.com/thepanzini/dotfiles/commit/1076ab23b26743c1a31a13da28989603347df550))
+* CHSH and adding command to run of shell ([2965760](https://github.com/thepanzini/dotfiles/commit/29657608f37b34b03397682ac0a94feee5df0211))
+* Fix path for knock-down srcipt ([98f5d62](https://github.com/thepanzini/dotfiles/commit/98f5d62f98f402c9d5744fe92fb00197ee7f4773))
+* I didnt modify the setup script ([ea78445](https://github.com/thepanzini/dotfiles/commit/ea78445b794e0ad253ebdd5dc068214f2c1a9748))
+* Last PID var ([8661be6](https://github.com/thepanzini/dotfiles/commit/8661be6f0c98cbd36735cbfa8fec207443612ee6))
+* Non interactive installation of OMF ([261dcb4](https://github.com/thepanzini/dotfiles/commit/261dcb42aba8c1f872eb79701aeac5351de85afb))
+* Normal color printf ([4d2a310](https://github.com/thepanzini/dotfiles/commit/4d2a310ee15cf74c8b36dbe2d7ef50689236be5e))
+* OMF install ([a9ecd0b](https://github.com/thepanzini/dotfiles/commit/a9ecd0b51345a7a45fc534c23126a97ef2c5b97c))
+* Printf green ([5b9d064](https://github.com/thepanzini/dotfiles/commit/5b9d0643a9f8b0558127d9c50eb3adc3952bf952))
+* Remove comment over theme install ([c4ff115](https://github.com/thepanzini/dotfiles/commit/c4ff11520e8baec8ec6ec6ea3302f8108b7cbdbc))
+* shell var ([25fc581](https://github.com/thepanzini/dotfiles/commit/25fc581455564487d23e751a7fc21376ad6876a3))
+* trying something else ([439e169](https://github.com/thepanzini/dotfiles/commit/439e16928b1868f23f21a62d5269f280ba8bf6a6))
+* Wrote knock-down script into shell start up ([666302a](https://github.com/thepanzini/dotfiles/commit/666302ac0dc42f4630ae154743e1926a7a14b5c1))
+
 ### [1.0.2](https://github.com/thepanzini/dotfiles/compare/v1.0.1...v1.0.2) (2021-05-19)
 
 
