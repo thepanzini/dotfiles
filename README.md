@@ -15,28 +15,29 @@
 
 This is my personal collection of configuration files and scripts. More details below.
 
-## Get Fish
-Friendly Interactive Shell [fish](https://github.com/fish-shell/fish-shell)
+# Steps
 
-## Get Oh My Fish
-Oh My Fish [OMF](https://github.com/oh-my-fish/oh-my-fish)
+### Clone
 
-## Install Bobthefish
-```bash
-omf install bobthefish
-```
+Clone this repo 
 
-# Copy over files
+`git clone https://github.com/thepanzini/dotfiles.git`
 
-Clone project.
-Move to config file dir at `project_dir(dotfiles)/files`
+### Begin
 
-Then:
-```bash
-cp -rf .vim ~ && cp -f .vimrc .tmux.conf .tmux.conf.local ~ && cp config.fish ~/.config/fish/
-```
+Copy this and paste in your terminal
 
-#Done!
+`cd dotfiles && chmod +x setup theme knock-down && ./setup`
+
+### Kinks
+
+Maybe the setup script will work maybe not. If not run the theme script after setup
+
+### Restart
+
+Restart session to apply settings
+
+# Done!
 
 ## License
 
