@@ -12,15 +12,19 @@ NC='\033[0m'
 
 echo -e "ADDING FISH REPO\n\n"
 apt-add-repository ppa:fish-shell/release-3 -y
-echo -e "\n\nFISH REPO ${GREEN}ADDED$NC\n\n"
+echo -e "FISH REPO ${GREEN}ADDED$NC\n\n"
 
 echo -e "UPDATING APT\n\n"
 apt-get update
-echo -e "\n\nAPT ${GREEN}UPDATED$NC\n\n"
+echo -e "APT ${GREEN}UPDATED$NC\n\n"
 
 echo -e "INSTALLING ${YELLOW}FISH$NC\n\n"
 apt-get install fish -y
-echo -e "\n\n${YELLOW}FISH$NC READY TO ${BLUE}SWIM$NC\n\n"
+echo -e "${YELLOW}FISH$NC READY TO ${BLUE}SWIM$NC\n\n"
+
+echo -e "ADDING ${YELLOW}KNOCK-DOWN$NC TO START-UP\n\n"
+echo 'source ./dotfiles/knock-down' >  ~/.config/fish/config.fish
+echo -e "${YELLOW}KNOCK-DOWN$NC ${GREEN}ADDED$NC\n\n"
 
 echo -e "INSTALLING ${BLUE}OMF$NC\n\n"
-curl -L https://get.oh-my.fish | exec fish < /dev/tty
+curl -L https://get.oh-my.fish | fish 
