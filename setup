@@ -11,20 +11,21 @@ YELLOW='\033[1;33m'
 NC='\033[0m'
 
 echo -e "ADDING FISH REPO\n\n"
-apt-add-repository ppa:fish-shell/release-3 -y
+sudo apt-add-repository ppa:fish-shell/release-3 -y
 echo -e "FISH REPO ${GREEN}ADDED$NC\n\n"
 
 echo -e "UPDATING APT\n\n"
-apt-get update
+sudo apt-get update
 echo -e "APT ${GREEN}UPDATED$NC\n\n"
 
 echo -e "INSTALLING ${YELLOW}FISH$NC\n\n"
-apt-get install fish -y
+sudo apt-get install fish -y
 echo -e "${YELLOW}FISH$NC READY TO ${BLUE}SWIM$NC\n\n"
 
 echo -e "ADDING ${YELLOW}KNOCK-DOWN$NC TO START-UP\n\n"
-mkdir ~/.config/fish/
-echo 'source ~/dotfiles/set_theme >  ~/.config/fish/config.fish
+mkdir ~/.config/
+mkdir ~/.config/fish
+echo 'source ~/dotfiles/theme' >  ~/.config/fish/config.fish
 echo -e "${YELLOW}KNOCK-DOWN$NC ${GREEN}ADDED$NC\n\n"
 
 echo -e "INSTALLING ${BLUE}OMF$NC\n\n"
