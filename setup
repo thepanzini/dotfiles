@@ -23,6 +23,7 @@ apt-get install fish -y
 echo -e "${YELLOW}FISH$NC READY TO ${BLUE}SWIM$NC\n\n"
 
 echo -e "ADDING ${YELLOW}KNOCK-DOWN$NC TO START-UP\n\n"
+mkdir ~/.config/fish/
 echo 'source ~/dotfiles/knock-down' >  ~/.config/fish/config.fish
 echo -e "${YELLOW}KNOCK-DOWN$NC ${GREEN}ADDED$NC\n\n"
 
