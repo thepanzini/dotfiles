@@ -1,0 +1,38 @@
+#!/bin/bash
+
+checked="[o] "
+unchecked="[ ] "
+
+spinners=( "/" "-" "\\" "|" )
+
+items=( "TEST" "FISH" "OMF" "DOTFILES" "SOUP" "PEAS" "CORN" "GROCERY LIST" "BITS" "BYTES" )
+
+for item in "${items[@]}" ; do
+
+    # THIS IS THE MAGIC
+
+    first=1
+
+    spinner_loops=$(shuf -i 20-30 -n 1)
+
+    for (( i=0; i<$spinner_loops; i++ )); do
+        for s in "${spinners[@]}"; do
+            msg=$(echo -ne "${unchecked}${item}... ${s}")
+
+            if [ $first == 1 ]; then
+                for (( i=0; i<${#msg}; i++ )); do
+                   echo -ne "${msg:$i:1}"; sleep .1;
+                done
+                first=0
+            else
+                echo -n "${msg}"
+            fi
+
+            sleep .05
+            echo -ne "\r"
+        done
+            echo -ne "\033[K"
+    done
+
+    echo -e "${checked}${item}... [OK]"
+done
